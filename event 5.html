@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>querySelectorAll</title>
+</head>
+<body>
+
+<div id="box">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+
+<script>
+    // select all span elements
+    let spans = document.querySelectorAll("#box span");
+
+    // assign text and add border
+    for (let i = 0; i < spans.length; i++) {
+        spans[i].textContent = "Hello";
+        spans[i].style.border = "2px solid green";
+    }
+</script>
+
+</body>
+</html>
